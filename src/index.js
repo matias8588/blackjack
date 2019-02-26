@@ -1,4 +1,1 @@
-import 'jquery'
-import 'bootstrap'
-
-console.log('hola');
+import sass from './scss/main.scss'
