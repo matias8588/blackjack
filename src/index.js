@@ -18,3 +18,10 @@ window.cartaElegida = (clickedId) => {
   }
 }
 /* Fin de seleccion de tarjetas y chequeo de igualdad */
+
+/* Script para dar vuelta la tarjeta al seleccionarla */
+// const card = document.getElementsByClassName('card')
+const flip = document.querySelector('.flip')
+flip.addEventListener('click', function () {
+  flip.classList.toggle('is-flipped')
+})

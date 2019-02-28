@@ -4,3 +4,33 @@
 body {
   background-color: white;
 }
+
+.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.back {
+  width: 270px;
+  height: 360px;
+}
+
+.flip {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
