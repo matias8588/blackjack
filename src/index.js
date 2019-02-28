@@ -13,6 +13,8 @@ window.cartaElegida = (clickedId) => {
     cartasSeleccionadas = []
     document.querySelector('.carta-' + clickedId).style.display = 'none'
     document.querySelector('.carta1-' + clickedId).style.display = 'none'
+  } else if (cartasSeleccionadas.length > 1) {
+    cartasSeleccionadas = []
   }
 }
 /* Fin de seleccion de tarjetas y chequeo de igualdad */
